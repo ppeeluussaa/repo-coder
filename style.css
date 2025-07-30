@@ -147,6 +147,14 @@ footer {
     font-size: 0.9rem;
 }
 
+.footer-text.mobile {
+  display: none;
+}
+
+.footer-text.desktop {
+  display: block;
+}
+
 /* Formularios */
 input[type="text"],
 input[type="email"],
@@ -172,5 +180,13 @@ textarea {
   .video-container {
     max-width: 90%;
   }
+  .footer-text.desktop {
+    display: none;
+  }
+
+  .footer-text.mobile {
+    display: block;
+  }
 }
+
 
