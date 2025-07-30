@@ -1,0 +1,65 @@
+<main>   
+  <h1 class="text-white text-center my-4">Modelos Disponibles</h1>
+
+  <div class="container my-5">
+    <div class="row text-center justify-content-center">
+
+      <!-- COUPES -->
+      <div class="col-md-4 mb-4">
+        <h3 class="text-white">coupes</h3>
+        <div id="carouselCoupes" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner border">
+            <div class="carousel-item active">
+              <img src="imagenes/coupe1.jpg" class="d-block w-100" alt="Coupe 1">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/coupe2.jpg" class="d-block w-100" alt="Coupe 2">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEDAN -->
+      <div class="col-md-4 mb-4">
+        <h3 class="text-white">sedan</h3>
+        <div id="carouselSedan" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner border">
+            <div class="carousel-item active">
+              <img src="imagenes/sedan1.jpg" class="d-block w-100" alt="Sedan 1">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/sedan2.jpg" class="d-block w-100" alt="Sedan 2">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUV -->
+      <div class="col-md-4 mb-4">
+        <h3 class="text-white">suv</h3>
+        <div id="carouselSUV" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner border">
+            <div class="carousel-item active">
+              <img src="imagenes/suv1.jpg" class="d-block w-100" alt="SUV 1">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/suv2.jpg" class="d-block w-100" alt="SUV 2">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Lista original -->
+  <ul>
+    <li>BMW Serie 3 M340I 3.0 Xdrive M Performance</li>
+    <li>BMW Serie 4 430i Coupe M Sport 2.0 </li>
+    <li>BMW Xdrive20I X2 2.0 Msport</li>
+    <li>BMW Serie 3330i 3.0 Sedan Sport Line</li>
+  </ul>
+
+  <img src="./imagenes/Modelos-autos-BMW.jpg" alt="Gama de modelos BMW disponibles en concesionario oficial"
+       width="560" height="315">
+</main>

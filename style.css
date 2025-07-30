@@ -1,0 +1,176 @@
+/* Colores */
+.text-white{
+    color: #ffffff;
+}
+.text-black{
+    color: #000000;
+}
+
+/* Estilos Generales */
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box  ;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.Bodys-gen{
+
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+nav ul{
+    
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    flex-direction: column;
+    margin: 1px;
+    gap: 1rem;
+    
+    
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+body{
+background-image: url(/imagenes/fondo-index.jpg);
+background-size: cover;
+background-color: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(1000px);
+margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+/* Header Estilos*/
+
+.Index-header-contenedor-superior {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        text-decoration: none;
+                 
+}
+
+
+
+header a{
+    color:#ffffff;
+    text-decoration: none;
+
+}
+
+
+
+
+.navbar-logo{
+    width: 140px;
+    height: auto;
+}
+.Logo{
+    width: 140px;
+    height: auto;
+
+}
+
+.menu-con-logo{
+    display: flex;
+  align-items: center;
+  gap: 5   px;
+  background-color: white !important;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-opciones{
+
+    text-decoration: none;
+}
+
+
+.video-wrapper {
+  display: flex;
+  justify-content: center; 
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.video-container{
+   position: relative;
+  width: 100%;
+  max-width: 560px; 
+
+}
+
+
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    color: #262626;
+    font-size: 0.9rem;
+}
+
+/* Formularios */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Carrusel*/
+.d-block w-100{
+     height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 600px){
+  .video-container {
+    max-width: 90%;
+  }
+}
+
