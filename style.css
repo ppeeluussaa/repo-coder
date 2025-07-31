@@ -1,150 +1,230 @@
-/* Colores */
-.text-white{
-    color: #ffffff;
-}
-.text-black{
-    color: #000000;
-}
+/* ------------------------------------ */
+/* ----------- COLORES ---------------- */
+/* ------------------------------------ */
 
-/* Estilos Generales */
-
-*{
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box  ;
+.text-white {
+  color: #ffffff;
 }
 
-h1 {
-    color: #ffffff;
-    margin-bottom: 1rem;
+.text-black {
+  color: #000000;
 }
 
 
-h2 {
-    color: #ffffff;
-    margin-bottom: 0.75rem;
-}
+/* ------------------------------------ */
+/* --------- ESTILOS GENERALES -------- */
+/* ------------------------------------ */
 
-p {
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-}
-
-.Bodys-gen{
-
-}
-
-/* Imágenes */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-nav ul{
-    
-    display: flex;
-    align-items: flex-start;
-    list-style: none;
-    flex-direction: column;
-    margin: 1px;
-    gap: 1rem;
-    
-    
-}
-
-nav ul a {
-    text-decoration: none;
-}
-
-body{
-background-image: url(./imagenes/fondo-index.jpg);
-background-size: cover;
-background-color: rgba(255, 255, 255, 0.6);
-backdrop-filter: blur(1000px);
-margin: 0;
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-
-
-
-/* Header Estilos*/
-
-.Index-header-contenedor-superior {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        text-decoration: none;
-                 
-}
-
-
-
-header a{
-    color:#ffffff;
-    text-decoration: none;
-
-}
-
-
-
-
-.navbar-logo{
-    width: 140px;
-    height: auto;
-}
-.Logo{
-    width: 140px;
-    height: auto;
-
-}
-
-.menu-con-logo{
-    display: flex;
-  align-items: center;
-  gap: 5   px;
-  background-color: white !important;
-  width: 100vw;
+body {
+  background-image: url(./imagenes/fondo-index.jpg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(1000px);
   margin: 0;
   padding: 0;
 }
 
-.menu-opciones{
+h1 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
 
-    text-decoration: none;
+h2 {
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 1rem;
 }
 
 
-.video-wrapper {
+/* ------------------------------------ */
+/* -------- SECCIÓN NOSOTROS ---------- */
+/* ------------------------------------ */
+.sobre-nosotros {
+display: flex;
+flex-direction: column  ;
+  align-items: center;    
+  text-align: center; 
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+  min-height: 100vh; 
+}
+
+/* ------------------------------------ */
+/* -------- SECCIÓN SERVICIOS --------- */
+/* ------------------------------------ */
+
+.Nuestros-servicios{
+    display: flex;
+flex-direction: column  ;
+  align-items: center;    
+  text-align: center; 
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+  min-height: 100vh; 
+}
+
+
+
+
+
+
+
+/* ------------------------------------ */
+/* ------------ IMÁGENES -------------- */
+/* ------------------------------------ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.foto-index {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 20rem;
+}
+
+.Img-conce {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.Img-autos{
+    max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+
+
+
+/* ------------------------------------ */
+/* ------------ HEADER ---------------- */
+/* ------------------------------------ */
+
+.Index-header-contenedor-superior {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.Index-Header-contenedor-inferior {
+  display: flex;
+  justify-content: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
-.video-container{
-   position: relative;
-  width: 100%;
-  max-width: 560px; 
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  
+}
 
+.navbar-logo,
+.Logo {
+  width: 140px;
+  height: auto;
+   
+}
+
+.menu-con-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: white !important;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-weight: bold !important;
+}
+
+.menu-opciones {
+  text-decoration: none;
+}
+
+.boton-sumate{
+    background-color: white;  /* fondo blanco */
+  color: black;             /* texto negro */
+  border: 2px solid black;  /* borde negro */
+  padding: 10px 20px;       /* espacio interno */
+  cursor: pointer;          /* cursor puntero al pasar el mouse */
+  text-decoration: none;    /* sin subrayado */
+  font-family: inherit;     /* mantiene la fuente predeterminada */
+  font-size: 16px;          /* tamaño legible */
+  border-radius: 4px;       /* esquinas redondeadas suaves */
+  transition: background-color 0.3s, color 0.3s; /* transición suave */
+    
+    
 }
 
 
+/* ------------------------------------ */
+/* ------------ VIDEO ----------------- */
+/* ------------------------------------ */
 
-/* Footer */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+}
+
+
+/* ------------------------------------ */
+/* ----------- FORMULARIOS ------------ */
+/* ------------------------------------ */
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+
+/* ------------------------------------ */
+/* ------------ FOOTER ---------------- */
+/* ------------------------------------ */
+
 footer {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #ccc;
-    color: #262626;
-    font-size: 0.9rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  color: #262626;
+  font-size: 0.9rem;
 }
 
 .footer-text.mobile {
@@ -155,31 +235,97 @@ footer {
   display: block;
 }
 
-/* Formularios */
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 8px;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
+
+/* ------------------------------------ */
+/* ------------ CARRUSEL -------------- */
+/* ------------------------------------ */
+
+
+.d-block.w-100 {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
-/* Carrusel*/
-.d-block w-100{
-     height: 100%;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  color: black;
+  font-size: 2rem;
+}
+
+/* Usamos ::before para insertar flechas con texto */
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  content: '';
+}
+
+.carousel-control-prev::after,
+.carousel-control-next::after {
+  font-size: 2rem;
+  color: black;
+}
+
+.carousel-control-prev::after {
+  content: '‹';
+}
+
+.carousel-control-next::after {
+  content: '›';
+}
+
+/* Ajuste para que las imagenes llenen el rectangulo y el botón se mantenga visible */
+.card-carousel {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-carousel .carousel.slide {
+  height: 100%;
+}
+
+.card-carousel .carousel-inner,
+.card-carousel .carousel-item {
+  height: 100%;
+}
+
+.card-carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hace que el botón este encima de la imagen */
+.card-carousel a.btn {
+  z-index: 2;
+}
+
+/* ------------------------------------ */
+/* ----------- CARDS ------------------ */
+/* ------------------------------------ */
+
+.card-img-top {
+  height: 200px;
   object-fit: cover;
   width: 100%;
 }
 
 
-@media only screen and (max-width: 600px){
+
+
+/* ------------------------------------ */
+/* ----------- MEDIA QUERIES ---------- */
+/* ------------------------------------ */
+
+@media only screen and (max-width: 600px) {
   .video-container {
     max-width: 90%;
   }
+
   .footer-text.desktop {
     display: none;
   }
