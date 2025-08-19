@@ -1,15 +1,5 @@
-// Colores principales
-$blanco: #ffffff;
-$negro: #000000;
-$footer-color: #262626;
+@charset "UTF-8";
 
-// Tipografía
-$font-base: 16px;
-$h1-size: 2rem;
-$h2-size: 1.5rem;
-
-
-//general
 * {
   margin: 0;
   padding: 0;
@@ -24,71 +14,68 @@ body {
 }
 
 h1 {
-  color: $blanco;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 h2 {
-  color: $blanco;
+  color: #ffffff;
   margin-bottom: 0.75rem;
 }
 
 p {
-  color: $blanco;
+  color: #ffffff;
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 1rem;
 }
 
-//header
-.Index-header {
-  &-contenedor-superior {
+.Index-header-contenedor-superior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+
+  .menu-con-logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
+    gap: 5px;
+    background-color: #ffffff !important;
+    width: 100%;
+    padding: 0;
+    font-weight: bold;
 
-    .menu-con-logo {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      background-color: $blanco !important;
-      width: 100%;
-      padding: 0;
-      font-weight: bold;
-
-      .Logo,
-      .navbar-logo {
-        width: 140px;
-        height: auto;
-      }
+    .Logo,
+    .navbar-logo {
+      width: 140px;
+      height: auto;
     }
   }
+}
 
-  &-contenedor-inferior {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0 2rem 0;
-  }
+.Index-header-contenedor-inferior {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
 
+.Index-header {
   a {
-    color: $blanco;
+    color: #ffffff;
     text-decoration: none;
   }
 
   .boton-sumate {
-    background-color: $blanco;
-    color: $negro;
-    border: 2px solid $negro;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
   }
 }
-
-//sobre nosotros
 
 .sobre-nosotros,
 .Nuestros-servicios {
@@ -100,8 +87,6 @@ p {
   padding: 2rem 1rem;
   min-height: 100vh;
 }
-
-//imagenes
 
 img {
   max-width: 100%;
@@ -124,8 +109,6 @@ img {
   margin-bottom: 15px;
 }
 
-//video
-
 .video-wrapper {
   display: flex;
   justify-content: center;
@@ -138,11 +121,8 @@ img {
   max-width: 560px;
 }
 
-
-//forms
-
-input[type="text"],
-input[type="email"],
+input[type=text],
+input[type=email],
 textarea {
   width: 100%;
   max-width: 400px;
@@ -153,26 +133,24 @@ textarea {
   font-size: 1rem;
 }
 
-
-//footer
-
 footer {
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #ccc;
-  color: $footer-color;
+  color: #262626;
   font-size: 0.9rem;
 
   .footer-text {
-    &.mobile { display: none; }
-    &.desktop { display: block; }
+    &.mobile {
+      display: none;
+    }
+    &.desktop {
+      display: block;
+    }
   }
 }
 
-
-//carrousel
-
-    .d-block.w-100 {
+.d-block.w-100 {
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -185,8 +163,17 @@ footer {
   font-size: 2rem;
 }
 
-.carousel-control-prev::after { content: '‹'; font-size: 2rem; color: black; }
-.carousel-control-next::after { content: '›'; font-size: 2rem; color: black; }
+.carousel-control-prev::after {
+  content: "‹";
+  font-size: 2rem;
+  color: black;
+}
+
+.carousel-control-next::after {
+  content: "›";
+  font-size: 2rem;
+  color: black;
+}
 
 .card-carousel {
   height: 300px;
@@ -208,7 +195,9 @@ footer {
     z-index: 1;
   }
 
-  a.btn { z-index: 2; }
+  a.btn {
+    z-index: 2;
+  }
 }
 
 .card-img-top {
@@ -217,23 +206,20 @@ footer {
   width: 100%;
 }
 
-
-//media queries
-
 @media only screen and (max-width: 600px) {
-  .video-container { max-width: 90%; }
+  .video-container {
+    max-width: 90%;
+  }
 
   footer {
     .footer-text {
-      &.desktop { display: none; }
-      &.mobile { display: block; }
+      &.desktop {
+        display: none;
+      }
+      &.mobile {
+        display: block;
+      }
     }
   }
 }
-
-
-//main
-
-
-
 

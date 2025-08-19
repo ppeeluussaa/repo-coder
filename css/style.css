@@ -50,11 +50,13 @@ p {
   width: 140px;
   height: auto;
 }
+
 .Index-header-contenedor-inferior {
   display: flex;
   justify-content: center;
   margin: 1rem 0 2rem 0;
 }
+
 .Index-header a {
   color: #ffffff;
   text-decoration: none;
