@@ -1,3 +1,6 @@
+// --------------------
+// Estilos globales
+// --------------------
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +19,9 @@ h1, h2, p {
   margin-bottom: 1rem;
 }
 
-h2 { margin-bottom: 0.75rem; }
+h2 {
+  margin-bottom: 0.75rem;
+}
 
 p {
   font-size: $font-parrafo;
@@ -35,8 +40,7 @@ p {
     padding: 0;
     font-weight: bold;
 
-    .Logo,
-    .navbar-logo {
+    .Logo, .navbar-logo {
       width: 140px;
       height: auto;
     }
@@ -50,7 +54,10 @@ p {
 }
 
 .Index-header {
-  a { color: $blanco; text-decoration: none; }
+  a {
+    color: $blanco;
+    text-decoration: none;
+  }
 
   .boton-sumate {
     @include button-style($blanco, $negro);
@@ -65,16 +72,34 @@ p {
   min-height: 100vh;
 }
 
-img { @extend %img-responsive; }
+img {
+  @extend %img-responsive;
+}
 
-.foto-index { display: flex; justify-content: center; margin: 1rem 0 20rem 0; }
+.foto-index {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 20rem 0;
+}
 
 .Img-conce,
-.Img-autos { @extend %img-responsive; border-radius: 8px; margin-bottom: 15px; }
+.Img-autos {
+  @extend %img-responsive;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
 
-.video-wrapper { display: flex; justify-content: center; margin: 1rem 0 2rem 0; }
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
 
-.video-container { position: relative; width: 100%; max-width: 560px; }
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+}
 
 input[type=text],
 input[type=email],
@@ -96,18 +121,24 @@ footer {
   font-size: 0.9rem;
 
   .footer-text {
-    &.mobile { display: none; }
-    &.desktop { display: block; }
+    &.mobile {
+      display: none;
+    }
+    &.desktop {
+      display: block;
+    }
   }
 }
 
 .d-block.w-100,
-.card-img-top { 
+.card-img-top {
   width: 100%;
   object-fit: cover;
 }
 
-.card-img-top { height: 200px; }
+.card-img-top {
+  height: 200px;
+}
 
 .card-carousel {
   height: 300px;
@@ -116,7 +147,9 @@ footer {
 
   .carousel.slide,
   .carousel-inner,
-  .carousel-item { height: 100%; }
+  .carousel-item {
+    height: 100%;
+  }
 
   img {
     height: 100%;
@@ -127,7 +160,9 @@ footer {
     z-index: 1;
   }
 
-  a.btn { z-index: 2; }
+  a.btn {
+    z-index: 2;
+  }
 }
 
 .carousel-control-prev-icon,
@@ -137,16 +172,54 @@ footer {
   font-size: 2rem;
 }
 
-.carousel-control-prev::after { content: "‹"; color: black; font-size: 2rem; }
-.carousel-control-next::after { content: "›"; color: black; font-size: 2rem; }
+.carousel-control-prev::after {
+  content: "‹";
+  color: black;
+  font-size: 2rem;
+}
+
+.carousel-control-next::after {
+  content: "›";
+  color: black;
+  font-size: 2rem;
+}
 
 @media only screen and (max-width: 600px) {
-  .video-container { max-width: 90%; }
+  .video-container {
+    max-width: 90%;
+  }
 
   footer {
     .footer-text {
-      &.desktop { display: none; }
-      &.mobile { display: block; }
+      &.desktop {
+        display: none;
+      }
+      &.mobile {
+        display: block;
+      }
     }
   }
+}
+
+
+// --------------------
+// Estilos exclusivos del INDEX
+// --------------------
+.Index-Header-contenedor-inferior h1 {
+  font-size: 2.5rem;  // más grande
+  font-weight: bold;
+  text-align: center;
+}
+
+.foto-index p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
 }
