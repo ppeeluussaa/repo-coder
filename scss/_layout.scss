@@ -51,6 +51,12 @@ p {
   display: flex;
   justify-content: center;
   margin: 1rem 0 2rem 0;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 
 .Index-header {
@@ -78,8 +84,16 @@ img {
 
 .foto-index {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 1rem 0 20rem 0;
+
+  p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    text-align: center;
+    margin: 1rem auto;
+  }
 }
 
 .Img-conce,
@@ -199,23 +213,6 @@ footer {
       }
     }
   }
-}
-
-
-// --------------------
-// Estilos exclusivos del INDEX
-// --------------------
-.Index-Header-contenedor-inferior h1 {
-  font-size: 2.5rem;  // más grande
-  font-weight: bold;
-  text-align: center;
-}
-
-.foto-index p {
-  font-size: 1.3rem;
-  max-width: 800px;
-  text-align: center;
-  margin: 1rem auto;
 }
 
 main h2 {
