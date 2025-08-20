@@ -10,24 +10,21 @@ body {
   background-image: url(./imagenes/fondo-index.jpg);
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(1000px);
+  backdrop-filter: blur(100px);
 }
 
-h1 {
+h1, h2, p {
   color: #ffffff;
   margin-bottom: 1rem;
 }
 
 h2 {
-  color: #ffffff;
   margin-bottom: 0.75rem;
 }
 
 p {
-  color: #ffffff;
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 1rem;
 }
 
 .Index-header-contenedor-superior {
@@ -141,12 +138,8 @@ footer {
   font-size: 0.9rem;
 
   .footer-text {
-    &.mobile {
-      display: none;
-    }
-    &.desktop {
-      display: block;
-    }
+    &.mobile { display: none; }
+    &.desktop { display: block; }
   }
 }
 
@@ -156,23 +149,10 @@ footer {
   width: 100%;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: none;
-  color: black;
-  font-size: 2rem;
-}
-
-.carousel-control-prev::after {
-  content: "‹";
-  font-size: 2rem;
-  color: black;
-}
-
-.carousel-control-next::after {
-  content: "›";
-  font-size: 2rem;
-  color: black;
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .card-carousel {
@@ -195,31 +175,26 @@ footer {
     z-index: 1;
   }
 
-  a.btn {
-    z-index: 2;
-  }
+  a.btn { z-index: 2; }
 }
 
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  color: black;
+  font-size: 2rem;
 }
+
+.carousel-control-prev::after { content: "‹"; color: black; font-size: 2rem; }
+.carousel-control-next::after { content: "›"; color: black; font-size: 2rem; }
 
 @media only screen and (max-width: 600px) {
-  .video-container {
-    max-width: 90%;
-  }
+  .video-container { max-width: 90%; }
 
   footer {
     .footer-text {
-      &.desktop {
-        display: none;
-      }
-      &.mobile {
-        display: block;
-      }
+      &.desktop { display: none; }
+      &.mobile { display: block; }
     }
   }
 }
-
