@@ -53,19 +53,28 @@ p {
   align-items: center;     
   justify-content: center; 
   min-height: 60vh;        
-  text-align: center;
+  text-align: center; 
 
   h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    text-align: center; 
   }
 
   p {
     font-size: 1.3rem;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center; 
   }
+}
+
+main h2 {
+  font-size: 2rem;
+  text-align: center; 
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
 }
 
 .Index-header {
