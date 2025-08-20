@@ -5,11 +5,12 @@
 }
 
 body {
-  background-image: url(../imagenes/fondo-index.jpg);
+  background-image: url("/repo-coder/imagenes/fondo-index.jpg");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(100px);
 }
+
 
 h1, h2, p {
   color: #ffffff;
