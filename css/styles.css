@@ -10,16 +10,16 @@
 
 
 /*animaciones*/
-.fadeIn{
+.fadeIn {
   opacity: 0;
-  animation:myAnimation 2s infinite;
-
+  animation: myAnimation 2s forwards;
 }
 
-@keyframes myAnimation{
-  0%{opacity: 0; }
-  100{opacity: 1; }
+@keyframes myAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
+
 
 
 .Img-conce,
