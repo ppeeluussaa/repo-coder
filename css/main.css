@@ -1,4 +1,21 @@
 @charset "UTF-8";
+.sobre-nosotros,
+.Nuestros-servicios, .Index-header-contenedor-superior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Img-conce,
+.Img-autos, img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +23,7 @@
 }
 
 body {
-  background-image: url(../imagenes/fondo-index.jpg);
+  background-image: url("/repo-coder/imagenes/fondo-index.jpg");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(100px);
@@ -27,14 +44,12 @@ p {
 }
 
 .Index-header-contenedor-superior {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  text-decoration: none;
 }
 .Index-header-contenedor-superior .menu-con-logo {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   gap: 5px;
   background-color: #ffffff !important;
@@ -42,16 +57,40 @@ p {
   padding: 0;
   font-weight: bold;
 }
-.Index-header-contenedor-superior .menu-con-logo .Logo,
-.Index-header-contenedor-superior .menu-con-logo .navbar-logo {
+.Index-header-contenedor-superior .menu-con-logo .Logo, .Index-header-contenedor-superior .menu-con-logo .navbar-logo {
   width: 140px;
   height: auto;
 }
 
-.Index-header-contenedor-inferior {
+.Index-Header-contenedor-inferior {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin: 1rem 0 2rem 0;
+  text-align: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+.Index-Header-contenedor-inferior .h1-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.Index-Header-contenedor-inferior .h2-header {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.Index-Header-contenedor-inferior p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  color: #ffffff;
+}
+.Index-Header-contenedor-inferior .foto-index {
+  margin-top: 3rem;
 }
 
 .Index-header a {
@@ -70,32 +109,26 @@ p {
 
 .sobre-nosotros,
 .Nuestros-servicios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   justify-content: flex-start;
   padding: 2rem 1rem;
   min-height: 100vh;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 1rem;
-}
-
 .foto-index {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 1rem 0 20rem 0;
+}
+.foto-index p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  text-align: center;
+  margin: 1rem auto;
 }
 
 .Img-conce,
 .Img-autos {
-  max-width: 100%;
-  height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -138,16 +171,14 @@ footer .footer-text.desktop {
   display: block;
 }
 
-.d-block.w-100 {
-  height: 100%;
-  object-fit: cover;
+.d-block.w-100,
+.card-img-top {
   width: 100%;
+  object-fit: cover;
 }
 
 .card-img-top {
   height: 200px;
-  object-fit: cover;
-  width: 100%;
 }
 
 .card-carousel {
@@ -202,5 +233,10 @@ footer .footer-text.desktop {
     display: block;
   }
 }
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
